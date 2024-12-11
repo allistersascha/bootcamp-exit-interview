@@ -74,10 +74,14 @@ Use the native filter method to return a new array of only the pets that are dog
 that have had only one vet vist.
 */
 
+
+
 /*
 Use the native filter method to return a new array of only the pets that have had
 vet vists marked as 'Emergency'.
 */
+
+
 
 /*
 Use the map method to return a new array of strings containing each pet's name, age, 
@@ -107,6 +111,8 @@ example output =>
     "ADMINISTERED VACCINATIONS",
 ]
 */
+
+
 
 /*
 Use the native reduce method to return a string of each pet's name followed by the
