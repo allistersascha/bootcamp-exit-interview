@@ -76,6 +76,7 @@ that have had only one vet vist.
 
 
 
+
 /*
 Use the native filter method to return a new array of only the pets that have had
 vet vists marked as 'Emergency'.
@@ -96,21 +97,6 @@ example output =>
 ]
 */
 
-/*
-Use the native map method to return a new array of strings of each pet's vet visit
-notes uppercased.
-
-example output =>
-[
-    "SAW NOODLES FOR ANNUAL CHECK-UP",
-    "NOODLES ATE A PLANT POISONOUS TO CATS",
-    "SAW FLEUR FOR ANNUAL CHECK-UP",
-    "SAW FLEUR FOR ANNUAL CHECK-UP AND ADMINISTERED VACCINATIONS",
-    "BERNIE WAS BROUGHT IN FOR EXCESSIVE VOMITTING",
-    "PERFORMED BART'S NEUTERING",
-    "ADMINISTERED VACCINATIONS",
-]
-*/
 
 
 
