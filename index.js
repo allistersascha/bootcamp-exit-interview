@@ -74,6 +74,7 @@ Use the native filter method to return a new array of only the pets that are dog
 that have had only one vet vist.
 */
 
+const dogsWithOneVisit = pets.filter((pet) => pet.species === "dog" && pet.vetVisits.length === 1);
 
 
 
@@ -82,7 +83,13 @@ Use the native filter method to return a new array of only the pets that have ha
 vet vists marked as 'Emergency'.
 */
 
-
+const pets911 = pets.filter((pet) => {
+    for (let i = 0; i < pet.vetVisits.length; i++){
+        if (pet.vetVisits[i].type === "Emergency"){
+            return true;
+        }
+    }
+});
 
 /*
 Use the map method to return a new array of strings containing each pet's name, age, 
@@ -97,7 +104,9 @@ example output =>
 ]
 */
 
-
+const petBio = pets.map((pet) => {
+    return `${pet.name} - ${pet.gender} - ${pet.age} years old`;
+})
 
 
 /*
@@ -108,3 +117,8 @@ in the array).
 example output =>
 "Noodles - last visit: October 15, 2024\nFleur - last visit: July 20, 2024\nBernie - last visit: September 5, 2024\nBart - last visit: November 22, 2022"
 */
+
+const recentVisit = pets.reduce((acc, c) => {
+   return acc += `${c.name} - last visit ${c.vetVisits[c.vetVisits.length-1].date}\n`
+}, "");
+console.log(recentVisit);
